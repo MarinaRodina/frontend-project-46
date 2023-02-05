@@ -5,4 +5,8 @@ publish:
 gendiff -h:
 	node bin/gendiff.js
 lint:
-	npx eslint .	
+	npx eslint .
+test:
+	npx jest
+test-coverage:
+	npx jest --coverage		
