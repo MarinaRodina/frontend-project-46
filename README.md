@@ -1,5 +1,5 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/MarinaRodina/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/MarinaRodina/frontend-project-46/actions)
+[![Actions Status](https://github.com/MarinaRodina/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/MarinaRodina/frontend-project-46/actions)  [![Maintainability](https://api.codeclimate.com/v1/badges/8f78b3e0e082b4f17984/maintainability)](https://codeclimate.com/github/MarinaRodina/frontend-project-46/maintainability)
 
 # **Example of how the package works**
 **Compare flat files:**
