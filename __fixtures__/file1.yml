@@ -1,0 +1,5 @@
+MaxChartHistoryLength: 10
+Port: 35052
+UseThrottling: True
+UseHistoryBroadcast: False
+UseImbalances: True

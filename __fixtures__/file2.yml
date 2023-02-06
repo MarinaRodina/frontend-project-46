@@ -1,0 +1,5 @@
+MaxChartHistoryLength: 10
+Port: 35016
+UseThrottling: True
+CalendarName: "EmptyCalendar"
+UseImbalances: True
