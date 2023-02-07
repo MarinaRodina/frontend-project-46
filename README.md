@@ -11,4 +11,4 @@
 
 **Compare flat yaml files:**
 
-[![asciicast](https://asciinema.org/a/wDl1cabRE1zADo0gcWdNGWpaH.svg)](https://asciinema.org/a/wDl1cabRE1zADo0gcWdNGWpaH)
+[![asciicast](https://asciinema.org/a/aODasqgGRukQpwfdK3C5dpq3W.svg)](https://asciinema.org/a/aODasqgGRukQpwfdK3C5dpq3W)
