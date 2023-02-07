@@ -1,5 +1,4 @@
-MaxChartHistoryLength: 10
-Port: 35052
-UseThrottling: True
-UseHistoryBroadcast: False
-UseImbalances: True
+host: hexlet.io
+timeout: 50
+proxy: 123.234.53.22
+follow: false

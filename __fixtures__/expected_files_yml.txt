@@ -1,9 +1,0 @@
-{
-  + CalendarName: EmptyCalendar
-    MaxChartHistoryLength: 10
-  - Port: 35052
-  + Port: 35016
-  - UseHistoryBroadcast: false
-    UseImbalances: true
-    UseThrottling: true
-}
