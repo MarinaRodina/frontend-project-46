@@ -18,12 +18,12 @@ test('genDiff - compare YML files', () => {
     .toEqual(readFile(getFixturePath('expected_files.txt')));
 });
 
-test('genDiff - nested JSON files', () => {
+test('genDiff - nested JSON files stylish', () => {
   expect(genDiff(getFixturePath('file3.json'), getFixturePath('file4.json')))
-    .toEqual(readFile(getFixturePath('expected_files_nested.txt')));
+    .toEqual(readFile(getFixturePath('expected_files_stylish.txt')));
 });
 
-test('genDiff - nested YML files', () => {
+test('genDiff - nested YML files stylish', () => {
   expect(genDiff(getFixturePath('file3.yaml'), getFixturePath('file4.yaml')))
-    .toEqual(readFile(getFixturePath('expected_files_nested.txt')));
+    .toEqual(readFile(getFixturePath('expected_files_stylish.txt')));
 });
