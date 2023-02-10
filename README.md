@@ -12,3 +12,8 @@
 **Compare flat yaml files:**
 
 [![asciicast](https://asciinema.org/a/aODasqgGRukQpwfdK3C5dpq3W.svg)](https://asciinema.org/a/aODasqgGRukQpwfdK3C5dpq3W)
+
+
+**Compare nested files in _STYLISH format_:**
+
+[![asciicast](https://asciinema.org/a/V3cwCXym5QnSfNOpD3vci3B2C.svg)](https://asciinema.org/a/V3cwCXym5QnSfNOpD3vci3B2C)
