@@ -16,4 +16,4 @@
 
 **Compare nested files in _STYLISH format_:**
 
-[![asciicast](https://asciinema.org/a/V3cwCXym5QnSfNOpD3vci3B2C.svg)](https://asciinema.org/a/V3cwCXym5QnSfNOpD3vci3B2C)
+[![asciicast](https://asciinema.org/a/NjoA3WlMPG4WsGRAzCcVbVz4g.svg)](https://asciinema.org/a/NjoA3WlMPG4WsGRAzCcVbVz4g)
