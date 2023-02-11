@@ -19,11 +19,21 @@ test('genDiff - compare YML files', () => {
 });
 
 test('genDiff - nested JSON files stylish', () => {
-  expect(genDiff(getFixturePath('file3.json'), getFixturePath('file4.json')))
+  expect(genDiff(getFixturePath('file3.json'), getFixturePath('file4.json'), 'stylish'))
     .toEqual(readFile(getFixturePath('expected_files_stylish.txt')));
 });
 
 test('genDiff - nested YML files stylish', () => {
-  expect(genDiff(getFixturePath('file3.yaml'), getFixturePath('file4.yaml')))
+  expect(genDiff(getFixturePath('file3.yaml'), getFixturePath('file4.yaml'), 'stylish'))
     .toEqual(readFile(getFixturePath('expected_files_stylish.txt')));
+});
+
+test('genDiff - nested JSON files plain', () => {
+  expect(genDiff(getFixturePath('file3.json'), getFixturePath('file4.json'), 'plain'))
+    .toEqual(readFile(getFixturePath('expected_files_plain.txt')));
+});
+
+test('genDiff - nested YML files plain', () => {
+  expect(genDiff(getFixturePath('file3.yaml'), getFixturePath('file4.yaml'), 'plain'))
+    .toEqual(readFile(getFixturePath('expected_files_plain.txt')));
 });

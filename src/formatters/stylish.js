@@ -1,7 +1,9 @@
+import _ from 'lodash';
+
 const indent = (depth, replacer = ' ', spacesCount = 4) => replacer.repeat(depth * spacesCount - 2);
 
 const stringify = (node, depth = 1) => {
-  if (typeof node !== 'object' || node === null) {
+  if (!_.isObject(node)) {
     return String(node);
   }
   const keys = Object.keys(node);
@@ -33,22 +35,22 @@ const stylish = (tree) => {
         const result = children.flatMap((child) => iter(child, depth + 1));
         return `${indent(depth)}  ${key}: {\n${result.join('\n')}\n${indent(depth)}  }`;
       }
-      case 'added': {
+      case 'added':
         return `${indent(depth)}+ ${key}: ${stringify(value, depth)}`;
-      }
-      case 'deleted': {
+
+      case 'deleted':
         return `${indent(depth)}- ${key}: ${stringify(value, depth)}`;
-      }
+
       case 'changed': {
         const beforeChange = `${indent(depth)}- ${key}: ${stringify(value1, depth)}`;
         const afterChange = `${indent(depth)}+ ${key}: ${stringify(value2, depth)}`;
         return `${beforeChange}\n${afterChange}`;
       }
-      case 'unchanged': {
+      case 'unchanged':
         return `${indent(depth)}  ${key}: ${stringify(value, depth)}`;
-      }
+
       default:
-        throw new Error(`Unknown type: '${type}'`);
+        return `Unknown type ${type}`;
     }
   };
   return iter(tree);
