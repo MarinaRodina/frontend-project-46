@@ -26,3 +26,9 @@
 **Compare nested files in _PLAIN format_:**
 
 [![asciicast](https://asciinema.org/a/gYthVJwFfn2XyeVM1L9phLILp.svg)](https://asciinema.org/a/gYthVJwFfn2XyeVM1L9phLILp)
+
+
+**Compare nested files in _JSON format_:**
+
+[![asciicast](https://asciinema.org/a/ceWwWkbRwl2K0HlaQikfDwyZw.svg)](https://asciinema.org/a/ceWwWkbRwl2K0HlaQikfDwyZw)
+
