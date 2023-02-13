@@ -6,7 +6,7 @@ const generateTree = (obj1, obj2) => {
   const keysUnion = _.union(key1, key2);
   const keysSort = _.sortBy(keysUnion);
 
-  const callback = (key) => {
+  const iter = (key) => {
     const hasValue1 = Object.hasOwn(obj1, key);
     const hasValue2 = Object.hasOwn(obj2, key);
 
@@ -33,7 +33,7 @@ const generateTree = (obj1, obj2) => {
     return { key, value: value1, type: 'unchanged' };
   };
 
-  const result = keysSort.map(callback);
+  const result = keysSort.map(iter);
   return result;
 };
 
