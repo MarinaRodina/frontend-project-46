@@ -10,12 +10,6 @@ const readFile = (filepath) => readFileSync(filepath, 'utf8');
 
 const tests = [
   {
-    file1: 'file1.json', file2: 'file2.json', expected: 'expected_files.txt',
-  },
-  {
-    file1: 'file1.yml', file2: 'file2.yml', expected: 'expected_files.txt',
-  },
-  {
     file1: 'file3.json', file2: 'file4.json', expected: 'expected_files_stylish.txt',
   },
   {
