@@ -13,10 +13,10 @@ const genDiff = (filepath1, filepath2, formatName = 'stylish') => {
   const data1 = readFile(getAbsolutePath(filepath1));
   const data2 = readFile(getAbsolutePath(filepath2));
 
-  const obj1 = parsers(data1, getExtension(filepath1));
-  const obj2 = parsers(data2, getExtension(filepath2));
+  const parsedData1 = parsers(data1, getExtension(filepath1));
+  const parsedData2 = parsers(data2, getExtension(filepath2));
 
-  const diffTree = buildTree(obj1, obj2);
+  const diffTree = buildTree(parsedData1, parsedData2);
 
   return format(diffTree, formatName);
 };
