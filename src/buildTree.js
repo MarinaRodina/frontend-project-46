@@ -1,10 +1,10 @@
 import _ from 'lodash';
 
 const generateTree = (obj1, obj2) => {
-  const key1 = Object.keys(obj1);
-  const key2 = Object.keys(obj2);
-  const keysUnion = _.union(key1, key2);
-  const keysSort = _.sortBy(keysUnion);
+  const keysObj1 = Object.keys(obj1);
+  const keysObj2 = Object.keys(obj2);
+  const keysUnion = _.union(keysObj1, keysObj2);
+  const sortedKeys = _.sortBy(keysUnion);
 
   const iter = (key) => {
     const hasValue1 = Object.hasOwn(obj1, key);
@@ -33,7 +33,7 @@ const generateTree = (obj1, obj2) => {
     return { key, value: value1, type: 'unchanged' };
   };
 
-  const result = keysSort.map(iter);
+  const result = sortedKeys.map(iter);
   return result;
 };
 
