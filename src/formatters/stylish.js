@@ -50,7 +50,7 @@ const stylish = (tree) => {
         return `${indent(depth)}  ${key}: ${stringify(value, depth)}`;
 
       default:
-        return `Unknown type ${type}`;
+        throw new Error(`Unknown type: '${type}'`);
     }
   };
   return iter(tree);

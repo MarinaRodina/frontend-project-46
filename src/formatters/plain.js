@@ -40,7 +40,7 @@ const plain = (tree) => {
         return [];
 
       default:
-        return `Unknown type ${type}`;
+        throw new Error(`Unknown type: '${type}'`);
     }
   };
   return iter(tree);
